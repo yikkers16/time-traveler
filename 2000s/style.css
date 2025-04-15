@@ -1,27 +1,93 @@
 /* This is a CSS override! It overrides default values for ALL elements. */
 /* I highly recommend keeping this override in your code. */
-* {
+
+/* content boxes */
+.column-left{
+	float: left;
+	width: 49%;
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+	padding: 20px;
+	border: 10px double chartreuse;
+	font-family: Helvetica;
+	color: white;
+}
+.column-right {
+	float: left;
+	width: 49%;
+	box-sizing: border-box;
+	padding: 20px;
+	background-image: repeating-linear-gradient(45deg, transparent, lightpink 10%, lightgreen 20%);
+	font-family: Georgia;
+	text-align: right;
+	border-radius: 25px;
+}
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+	width: 10%;
+}
+/* background photo */
+body {
+	background-image: url("https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F5FmCy7cbwSC42NVtvf3CPQ%252FKalman_Knole.jpg&width=1820");
+	background-size: 300px;
 }
 
-body {
-	background-color: yellow;
-	font-family: sans-serif;
+.title-left {
+	font-size: 45px;
+	color: black;
+	height: min-content;
+	width: fit-content;
+	background-image: linear-gradient(to right, red , white);
+	text-shadow: 1px 1px 5px green;
+	text-transform: uppercase;	
 }
-h1 {
+.subtitle-left {
+	font-size: 30px;
+	color: black;
+	height: min-content;
+	width: fit-content;
+	background-image: linear-gradient(to right, red , white);
+	text-shadow: 1px 1px 5px green;
+	text-transform: lowercase;	
+}
+.p-left {
 	margin: 20px;
+	background-color: black;
+	border: 2px dotted red;
 }
+
+.title-right {
+	font-size: 53px;
+	color: transparent;
+	text-shadow: 1px 1px 3.75px rebeccapurple;
+	font-family: Georgia;
+	text-align: center;	
+}
+.subtitle-right {
+	font-size: 30px;
+	color: transparent;
+	line-height: 1.2;
+	text-shadow: 1px 1px 3.5px rebeccapurple;
+	font-family: Georgia;
+}
+.p-right {
+	border-radius: 10px;
+	margin: 20px;
+	padding-right: 10px;
+	background-color: lemonchiffon;
+	opacity: 60%;
+	color: darkred;
+}
+
 h2 {
 	margin: 20px;
 }
+
+h3 {
+	margin: 20px;
+}
+
 p {
-	margin: 20px;
-}
-ul {
-	margin: 20px;
-}
-li {
 	margin: 20px;
 }

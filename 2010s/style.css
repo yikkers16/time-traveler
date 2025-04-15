@@ -6,16 +6,51 @@
 	margin: 0;
 }
 
-@font-face {
-	font-family: "Limkin";
-	src: url("assets/TMT-LimkinVF.ttf");
+.borel-regular {
+	font-family: "Borel", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 body {
-	font-family: "Limkin", serif;
-	font-variation-settings: "wght" 500, "SRFF" 100;
-	background: radial-gradient(circle, rgba(243,168,221,1) 0%, rgba(152,219,107,1) 20%, rgba(90,222,232,1) 40%, rgba(253,192,58,1) 60%, rgba(166,144,252,1) 80%, rgba(255,115,77,1) 100%);
+	font-family: "Borel", cursive;
+	font-weight: 400;
+	font-style: normal;
+	background: conic-gradient(rgba(243,168,221,1) 0%, rgba(152,219,107,1) 20%, rgba(90,222,232,1) 40%, rgba(253,192,58,1) 60%, rgba(166,144,252,1) 80%, rgba(255,115,77,1) 100%);
 	background-size: 100vw 100vh;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-family: "Borel", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.flex-container button {
+	background-color: lightseagreen;
+	color: white;
+	border: none;
+	padding: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background-color 0.3s;
+	font-family: "Borel", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.flex-container button:hover {
+	background-color: mediumseagreen;
+	font-family: "Borel", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .hidden {
@@ -24,7 +59,10 @@ body {
 
 h1 {
 	margin: 20px;
+	font-size: 80px;
+	word-spacing: 0.25px;
 }
+
 h2 {
 	margin: 20px;
 }
