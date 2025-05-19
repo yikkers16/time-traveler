@@ -7,7 +7,7 @@
 	width: 49%;
 	box-sizing: border-box;
 	padding: 20px;
-	border: 10px double chartreuse;
+	border: 10px double transparent;
 	font-family: Helvetica;
 	color: white;
 }
@@ -30,7 +30,7 @@
 /* background photo */
 body {
 	background-image: url("https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F5FmCy7cbwSC42NVtvf3CPQ%252FKalman_Knole.jpg&width=1820");
-	background-size: 300px;
+	background-size: 500px;
 }
 
 .title-left {
@@ -45,7 +45,7 @@ body {
 .subtitle-left {
 	font-size: 30px;
 	color: black;
-	height: min-content;
+	height: fit-content;
 	width: fit-content;
 	background-image: linear-gradient(to right, red , white);
 	text-shadow: 1px 1px 5px green;
