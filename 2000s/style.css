@@ -6,27 +6,28 @@
 	float: left;
 	width: 49%;
 	box-sizing: border-box;
-	padding: 20px;
 	border: 10px double transparent;
 	font-family: Helvetica;
 	color: white;
 }
+
 .column-right {
 	float: left;
 	width: 49%;
 	box-sizing: border-box;
-	padding: 20px;
 	background-image: repeating-linear-gradient(45deg, transparent, lightpink 10%, lightgreen 20%);
 	font-family: Georgia;
 	text-align: right;
 	border-radius: 25px;
 }
+
 .row::after {
 	content: "";
 	display: table;
 	clear: both;
 	width: 10%;
 }
+
 /* background photo */
 body {
 	background-image: url("https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F5FmCy7cbwSC42NVtvf3CPQ%252FKalman_Knole.jpg&width=1820");
@@ -42,6 +43,7 @@ body {
 	text-shadow: 1px 1px 5px green;
 	text-transform: uppercase;	
 }
+
 .subtitle-left {
 	font-size: 30px;
 	color: black;
@@ -51,6 +53,7 @@ body {
 	text-shadow: 1px 1px 5px green;
 	text-transform: lowercase;	
 }
+
 .p-left {
 	margin: 20px;
 	background-color: black;
@@ -64,6 +67,7 @@ body {
 	font-family: Georgia;
 	text-align: center;	
 }
+
 .subtitle-right {
 	font-size: 30px;
 	color: transparent;
@@ -71,6 +75,7 @@ body {
 	text-shadow: 1px 1px 3.5px rebeccapurple;
 	font-family: Georgia;
 }
+
 .p-right {
 	border-radius: 10px;
 	margin: 20px;
@@ -78,6 +83,32 @@ body {
 	background-color: lemonchiffon;
 	opacity: 60%;
 	color: darkred;
+}
+
+.button-left {
+  background-image: linear-gradient(to right, red, white);
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Helvetica;
+  color: black;
+  display: inline-block;
+  text-decoration: none;	
+  height: fit-content;
+  width: fit-content;  
+}
+
+.button-right {
+  font-size: 16px;
+  font-family: Georgia;
+  background-color: lemonchiffon;
+  height: fit-content;
+  width: fit-content;
+  color: darkmagenta;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 3px; 
 }
 
 h2 {
